@@ -1,0 +1,24 @@
+
+
+
+<section class="d-flex align-items-center justify-content-between flex-nowrap">
+
+  <div class="container my-5">
+
+    <h1 style="text-align: center;">Requisição de API Rick and Morty</h1>
+
+        <div class="card" style="width: 18rem; display: inline-block;
+        margin-top: 30px; margin-left: 20px; " *ngFor=" let p of personagens">
+          <img [src]="p.image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{p.name}}</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{p.status}}</li>
+            <li class="list-group-item">{{p.gender}}</li>
+            <li class="list-group-item">{{p.species}}</li>
+          </ul>
+        </div>
+      </div>
+</section>
